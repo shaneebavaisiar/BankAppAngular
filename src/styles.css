@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+.container{
+    width: 350px;
+    padding: 50px 30px;
+    position: relative;
+    top: 150px;
+    background-color:rgb(242, 247, 255);
+    border-radius: 10px;
+}
+.login_btn{
+    width: 100%;
+}
+.login_bttn{
+    width: 100%;
+    background-color:rgb(63, 141, 63);
+    color: white;
+    
+}
+.login_head{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(85, 107, 85);
+    /* color: green; */
+}
+.second_word{
+    color: rgb(148, 209, 148);
+}
+.label{
+    color:rgb(63, 141, 63) ;
+}
