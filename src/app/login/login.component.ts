@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  aim='Your Perfect Banking Partner'
+  account='Account Number'
 
   constructor() { }
 

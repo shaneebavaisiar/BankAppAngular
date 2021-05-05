@@ -1,14 +1,15 @@
 <div class="container">
-  <h3 class="login_head">Please  <span class="second_word">Login</span></h3>
+  <h3 class="login_head">{{aim}} <br>  Please  <span class="second_word">Login</span>
+  </h3>
 <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label label">Account Number</label>
-    <input type="text" class="form-control" id="accno" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="accno" aria-describedby="emailHelp" [value]='account'>
     
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label label">Password</label>
-    <input type="password" class="form-control" id="pwd">
+    <input type="password" class="form-control" id="pwd" >
   </div>
   <button type="button" class="btn login_bttn" onclick="">Login</button>
 </form>
