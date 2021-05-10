@@ -3,15 +3,15 @@
   </h3>
 <form>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label label">Account Number</label>
-    <input type="text" class="form-control" id="accno" aria-describedby="emailHelp" [value]='account' #accno>
+    <!-- <label for="exampleInputEmail1" class="form-label label">Account Number</label> -->
+    <input type="text" class="form-control" id="accno" aria-describedby="emailHelp" name="accno" [(ngModel)]="accno" placeholder="AccountNumber">
     
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label label">Password</label>
-    <input type="password" class="form-control" id="pwd" #pwd>
+    <!-- <label for="exampleInputPassword1" class="form-label label">Password</label> -->
+    <input type="password" class="form-control" id="pwd" name="password" [(ngModel)]="pswd" placeholder="password">
   </div>
-  <button type="button" class="btn login_bttn" (click)="login(accno,pwd)">Login</button>
+  <button type="button" class="btn login_bttn" (click)="login()">Login</button>
 </form>
 </div>
 
