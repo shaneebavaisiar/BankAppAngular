@@ -4,14 +4,14 @@
 <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label label">Account Number</label>
-    <input type="text" class="form-control" id="accno" aria-describedby="emailHelp" [value]='account' (change)='changeAcc($event)'>
+    <input type="text" class="form-control" id="accno" aria-describedby="emailHelp" [value]='account' #accno>
     
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label label">Password</label>
-    <input type="password" class="form-control" id="pwd" (change)='changePwd($event)' >
+    <input type="password" class="form-control" id="pwd" #pwd>
   </div>
-  <button type="button" class="btn login_bttn" (click)="login()">Login</button>
+  <button type="button" class="btn login_bttn" (click)="login(accno,pwd)">Login</button>
 </form>
 </div>
 
